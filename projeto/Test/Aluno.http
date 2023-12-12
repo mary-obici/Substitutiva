@@ -1,0 +1,10 @@
+POST https://localhost:7269/api/aluno/cadastrar
+{
+  "alunoId": 1,
+  "nome": "string",
+  "nasc": "string"
+}
+
+###get 
+GET https://localhost:7269/api/aluno/listar
+

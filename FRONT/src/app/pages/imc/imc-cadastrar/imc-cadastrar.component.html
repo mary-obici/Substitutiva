@@ -1,0 +1,16 @@
+<p>imc-cadastrar works!</p>
+    <label>Altura:</label>
+    <input  [(ngModel)]="altura"><br><br>
+  
+    <label> Peso:</label>
+    <input  [(ngModel)]="peso" ><br><br>
+
+    <label for="aluno">Selecione o Aluno:</label>
+<select [(ngModel)]="alunoId">
+  <option *ngFor="let aluno of alunos" [value]="aluno.AlunoId">{{ aluno.nome }}</option>
+</select><br><br>
+
+  
+    <button (click)="cadastrarImc()">Cadastrar imc</button>
+    <a routerLink="/pages/aluno/aluno-listar"><button>Voltar</button></a>    
+

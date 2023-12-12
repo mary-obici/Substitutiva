@@ -1,0 +1,27 @@
+<p>imc-listar works!</p>
+<table>
+  <thead>
+    <tr>
+      <th>Id Aluno</th>
+      <th>Altura</th>
+      <th>Peso</th>
+      <th>Imc</th>
+      <th>Classificação</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of imcs">
+      <td>{{ i.alunoId }}</td>
+      <td>{{ i.altura }}</td>
+      <td>{{ i.peso }}</td>
+      <td>{{ i.valorImc }}</td>
+      <td>{{ i.classificacao }}</td>
+      
+
+      <a routerLink="/pages/imc/imc-cadastrar"><button>Cadastrar</button></a>    
+      <a routerLink="/pages/aluno/aluno-listar"><button>Voltar</button></a>    
+
+    </tr>
+  </tbody>
+</table>

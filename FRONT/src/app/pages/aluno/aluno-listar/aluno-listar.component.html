@@ -1,0 +1,19 @@
+<a routerLink="/pages/imc/imc-listar"><button>Listar Imc</button></a>
+<a routerLink="/pages/aluno/aluno-cadastrar"><button>Cadastrar Aluno</button></a>
+<a routerLink="/pages/imc/imc-cadastrar"><button>Cadastrar IMC</button></a>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Data de Nascimento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let a of alunos">
+      <td>{{ a.nome }}</td>
+      <td>{{ a.nasc }}</td>
+      <a routerLink="/pages/aluno/aluno-cadastrar"><button>Cadastrar</button></a></tr>
+  </tbody>
+</table>

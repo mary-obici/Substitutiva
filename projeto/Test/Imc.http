@@ -1,0 +1,31 @@
+POST https://localhost:7269/api/imc/cadastrar
+{
+  
+  "alunoId": 0,
+  "altura": 1.50,
+  "peso": 44.0,
+  "valorImc": 0,
+  "classificacao": "string",
+  "criadoEm": "2023-12-11T23:28:35.580Z"
+}
+
+###get 
+GET https://localhost:7269/api/imc/listar
+
+###put
+PUT https://localhost:7269/api/imc/alterar
+{
+  "imcId": 2,
+  "alunoId": 0,
+  "aluno": {
+    "alunoId": 0,
+    "nome": "string",
+    "nasc": "string"
+  },
+  "altura": 1.5,
+  "peso": 44,
+  "valorImc": 19.555555555555557,
+  "classificacao": "NORMAL",
+  "criadoEm": "2023-12-11T23:28:35.58Z"
+}
+
